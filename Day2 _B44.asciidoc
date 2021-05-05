@@ -1,0 +1,499 @@
++*In[ ]:*+
+[source, ipython3]
+----
+understand the variable in python
+----
+
+
++*In[ ]:*+
+[source, ipython3]
+----
+
+----
+
+
++*In[1]:*+
+[source, ipython3]
+----
+X = 5
+y = 3
+----
+
+
++*In[3]:*+
+[source, ipython3]
+----
+x+y
+----
+
+
++*Out[3]:*+
+----
+
+    ---------------------------------------------------------------------------
+
+    NameError                                 Traceback (most recent call last)
+
+    <ipython-input-3-259706549f3d> in <module>
+    ----> 1 x+y
+    
+
+    NameError: name 'x' is not defined
+
+----
+
+
++*In[4]:*+
+[source, ipython3]
+----
+x + Y
+----
+
+
++*Out[4]:*+
+----
+
+    ---------------------------------------------------------------------------
+
+    NameError                                 Traceback (most recent call last)
+
+    <ipython-input-4-7a6786992d70> in <module>
+    ----> 1 x + Y
+    
+
+    NameError: name 'x' is not defined
+
+----
+
+
++*In[5]:*+
+[source, ipython3]
+----
+x = 5
+y = 5
+
+----
+
+
++*In[6]:*+
+[source, ipython3]
+----
+x + y
+----
+
+
++*Out[6]:*+
+----10----
+
+
++*In[ ]:*+
+[source, ipython3]
+----
+Rule for declearing the variables in python
+----
+
+
++*In[ ]:*+
+[source, ipython3]
+----
+Rule no 1 : No Namespace while declaring the variables name.
+----
+
+
++*In[7]:*+
+[source, ipython3]
+----
+first name = 'Thiru'
+print(firstname)
+----
+
+
++*Out[7]:*+
+----
+
+      File "<ipython-input-7-7587ddeec56b>", line 1
+        first name = 'Thiru'
+              ^
+    SyntaxError: invalid syntax
+    
+
+----
+
+
++*In[8]:*+
+[source, ipython3]
+----
+firstname(Thiru)
+print(firstname)
+----
+
+
++*Out[8]:*+
+----
+
+    ---------------------------------------------------------------------------
+
+    NameError                                 Traceback (most recent call last)
+
+    <ipython-input-8-cf2cec654bc0> in <module>
+    ----> 1 firstname(Thiru)
+          2 print(firstname)
+    
+
+    NameError: name 'firstname' is not defined
+
+----
+
+
++*In[9]:*+
+[source, ipython3]
+----
+firstname = 'Thiru'
+print(firstname)
+----
+
+
++*Out[9]:*+
+----
+Thiru
+----
+
+
++*In[10]:*+
+[source, ipython3]
+----
+first_name = 'Thiru'
+print(first_name)
+----
+
+
++*Out[10]:*+
+----
+Thiru
+----
+
+
++*In[ ]:*+
+[source, ipython3]
+----
+Rule 2: A Variable name Should not Start with a Number
+----
+
+
++*In[11]:*+
+[source, ipython3]
+----
+1name = 'Geetha'
+print(1Geetha)
+----
+
+
++*Out[11]:*+
+----
+
+      File "<ipython-input-11-cce50ae5e21f>", line 1
+        1name = 'Geetha'
+         ^
+    SyntaxError: invalid syntax
+    
+
+----
+
+
++*In[12]:*+
+[source, ipython3]
+----
+name1 = 'Geetha'
+print(name)
+----
+
+
++*Out[12]:*+
+----
+
+    ---------------------------------------------------------------------------
+
+    NameError                                 Traceback (most recent call last)
+
+    <ipython-input-12-f0c6879f4f66> in <module>
+          1 name1 = 'Geetha'
+    ----> 2 print(name)
+    
+
+    NameError: name 'name' is not defined
+
+----
+
+
++*In[13]:*+
+[source, ipython3]
+----
+name1 = 'Geetha'
+print(name1)
+----
+
+
++*Out[13]:*+
+----
+Geetha
+----
+
+
++*In[ ]:*+
+[source, ipython3]
+----
+Rule 3: A Variable Name Should not containany special characters @$#&
+----
+
+
++*In[14]:*+
+[source, ipython3]
+----
+name@ = 'Karthik'
+print(name@)
+----
+
+
++*Out[14]:*+
+----
+
+      File "<ipython-input-14-c1a215686c0e>", line 1
+        name@ = 'Karthik'
+              ^
+    SyntaxError: invalid syntax
+    
+
+----
+
+
++*In[ ]:*+
+[source, ipython3]
+----
+introduction to data types in python
+----
+
+
++*In[ ]:*+
+[source, ipython3]
+----
+1. String ----> str
+2. list ------> list
+3. tuple -----> tuple
+4. dictnory -----> dict
+5. Number --------> integers (int) and floats(decimal) ------> float
+
+----
+
+
++*In[ ]:*+
+[source, ipython3]
+----
+
+----
+
+
++*In[ ]:*+
+[source, ipython3]
+----
+calsicifications of datatypes :
+    broadly datatype are clasified in to two categories:
+        
+        1. Mutable datatypes  ======> which can be edited oralternate or modified
+        
+        2. Immutable datatypes =====> these are fixed once we cont edit.
+----
+
+
++*In[ ]:*+
+[source, ipython3]
+----
+
+----
+
+
++*In[ ]:*+
+[source, ipython3]
+----
+introduction to string datatypes:
+
+Defination : A string is nothing but a sereies of charectors enclosed in quotes.
+    
+clasification : it is clasified as a immutable datatypes
+    
+how to define a string dtat type.....?
+
+possiable ways -------> any possible combintion is allowed
+
+1. single quotes
+2. double quotes
+3. triple quotes
+----
+
+
++*In[ ]:*+
+[source, ipython3]
+----
+
+----
+
+
++*In[15]:*+
+[source, ipython3]
+----
+name = 'pramod'   # single quotes
+print(name)
+----
+
+
++*Out[15]:*+
+----
+pramod
+----
+
+
++*In[16]:*+
+[source, ipython3]
+----
+name2 = "karthik"     # double quotes
+print(name2)
+----
+
+
++*Out[16]:*+
+----
+karthik
+----
+
+
++*In[17]:*+
+[source, ipython3]
+----
+name3 = """Naveen"""     # triple quotes
+print(name3)
+----
+
+
++*Out[17]:*+
+----
+Naveen
+----
+
+
++*In[ ]:*+
+[source, ipython3]
+----
+
+----
+
+
++*In[ ]:*+
+[source, ipython3]
+----
+introduction to string methods : methods are builtin programs are avliable in python
+----
+
+
++*In[18]:*+
+[source, ipython3]
+----
+type ----> (name)
+----
+
+
++*Out[18]:*+
+----
+
+      File "<ipython-input-18-38560020269c>", line 1
+        type ----> (name)
+                ^
+    SyntaxError: invalid syntax
+    
+
+----
+
+
++*In[ ]:*+
+[source, ipython3]
+----
+type ---> it will be validating the datatypes
+----
+
+
++*In[19]:*+
+[source, ipython3]
+----
+type ----(name)
+----
+
+
++*Out[19]:*+
+----
+
+    ---------------------------------------------------------------------------
+
+    TypeError                                 Traceback (most recent call last)
+
+    <ipython-input-19-5700c6448bda> in <module>
+    ----> 1 type ----(name)
+    
+
+    TypeError: bad operand type for unary -: 'str'
+
+----
+
+
++*In[ ]:*+
+[source, ipython3]
+----
+
+----
+
+
++*In[ ]:*+
+[source, ipython3]
+----
+introduction to string methods : methods are builtin programs are avliable in python
+----
+
+
++*In[ ]:*+
+[source, ipython3]
+----
+type ---> it will be validating the datatypes
+----
+
+
++*In[20]:*+
+[source, ipython3]
+----
+type(name)
+----
+
+
++*Out[20]:*+
+----str----
+
+
++*In[21]:*+
+[source, ipython3]
+----
+type(name2)
+----
+
+
++*Out[21]:*+
+----str----
+
+
++*In[ ]:*+
+[source, ipython3]
+----
+# shift + Enter button together on the keyboard 
+----
+
+
++*In[ ]:*+
+[source, ipython3]
+----
+
+----
