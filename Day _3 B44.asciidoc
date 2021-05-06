@@ -1,0 +1,519 @@
++*In[ ]:*+
+[source, ipython3]
+----
+continous with strings :
+----
+
+
++*In[ ]:*+
+[source, ipython3]
+----
+
+----
+
+
++*In[54]:*+
+[source, ipython3]
+----
+full_name = 'sai kiran'
+print(full_name)
+----
+
+
++*Out[54]:*+
+----
+sai kiran
+----
+
+
++*In[55]:*+
+[source, ipython3]
+----
+full_name = 'sai kiran'
+print(full_name)
+----
+
+
++*Out[55]:*+
+----
+sai kiran
+----
+
+
++*In[ ]:*+
+[source, ipython3]
+----
+# req : to get the fullname output in the correct formate....|
+----
+
+
++*In[ ]:*+
+[source, ipython3]
+----
+
+----
+
+
++*In[56]:*+
+[source, ipython3]
+----
+print(full_name.title())  # title method ----> it will be converting first letters of the word in to capatials.
+----
+
+
++*Out[56]:*+
+----
+Sai Kiran
+----
+
+
++*In[ ]:*+
+[source, ipython3]
+----
+
+----
+
+
++*In[ ]:*+
+[source, ipython3]
+----
+# req : want to get the entire name in capatials....?
+----
+
+
++*In[4]:*+
+[source, ipython3]
+----
+print(full_name.upper())  # upper method
+----
+
+
++*Out[4]:*+
+----
+SAI KIRAN
+----
+
+
++*In[ ]:*+
+[source, ipython3]
+----
+
+----
+
+
++*In[ ]:*+
+[source, ipython3]
+----
+# req : i want to get the full name in small case letters.....?
+----
+
+
++*In[6]:*+
+[source, ipython3]
+----
+print(full_name.lower())  # lower
+----
+
+
++*Out[6]:*+
+----
+sai kiran
+----
+
+
++*In[ ]:*+
+[source, ipython3]
+----
+
+----
+
+
++*In[ ]:*+
+[source, ipython3]
+----
+introduction to f strings :
+----
+
+
++*In[ ]:*+
+[source, ipython3]
+----
+# general syntex of strings :
+----
+
+
++*In[ ]:*+
+[source, ipython3]
+----
+f"customwords {placeholders1} {placeholders2}.......{placeholdersn}"
+----
+
+
++*In[ ]:*+
+[source, ipython3]
+----
+
+----
+
+
++*In[66]:*+
+[source, ipython3]
+----
+first_name = 'sanjay'
+last_name = 'kumar'
+----
+
+
++*In[ ]:*+
+[source, ipython3]
+----
+# i want to get the fullname....?
+----
+
+
++*In[67]:*+
+[source, ipython3]
+----
+fullname = f"{first_name} {last_name}"
+print(fullname)
+----
+
+
++*Out[67]:*+
+----
+sanjay kumar
+----
+
+
++*In[ ]:*+
+[source, ipython3]
+----
+
+----
+
+
++*In[68]:*+
+[source, ipython3]
+----
+print(fullname.title())
+----
+
+
++*Out[68]:*+
+----
+Sanjay Kumar
+----
+
+
++*In[ ]:*+
+[source, ipython3]
+----
+# req : want to write my custom message , lets say hello,
+----
+
+
++*In[69]:*+
+[source, ipython3]
+----
+print(f"hello, {fullname.title()}")
+----
+
+
++*Out[69]:*+
+----
+hello, Sanjay Kumar
+----
+
+
++*In[ ]:*+
+[source, ipython3]
+----
+
+----
+
+
++*In[ ]:*+
+[source, ipython3]
+----
+Adding whitespaces to strings :
+----
+
+
++*In[ ]:*+
+[source, ipython3]
+----
+# req : to conduct a survey among a group of students in a college -------> fav prog langug
+----
+
+
++*In[ ]:*+
+[source, ipython3]
+----
+
+----
+
+
++*In[12]:*+
+[source, ipython3]
+----
+print("fav_programming_language:pythoncjavac++swiftjavascript")
+----
+
+
++*Out[12]:*+
+----
+fav_programming_language:pythoncjavac++swiftjavascript
+----
+
+
++*In[13]:*+
+[source, ipython3]
+----
+print("fav_programming_language:\npython\nc\njava\nc++\nswift\njavascript") # \n -----> new line delimiter
+----
+
+
++*Out[13]:*+
+----
+fav_programming_language:
+python
+c
+java
+c++
+swift
+javascript
+----
+
+
++*In[70]:*+
+[source, ipython3]
+----
+print("fav_programming_language:\n\tpython\n\tc\n\tjava\n\tc++\n\tswift\n\tjavascript")  # \t ------> tab decimiler
+----
+
+
++*Out[70]:*+
+----
+fav_programming_language:
+	python
+	c
+	java
+	c++
+	swift
+	javascript
+----
+
+
++*In[ ]:*+
+[source, ipython3]
+----
+
+----
+
+
++*In[ ]:*+
+[source, ipython3]
+----
+Removing whitespace from strings : 
+----
+
+
++*In[ ]:*+
+[source, ipython3]
+----
+
+----
+
+
++*In[46]:*+
+[source, ipython3]
+----
+fav_programing_language = 'python'    # valid syntax and proper output -----> clear
+print(fav_programing_language1)
+----
+
+
++*Out[46]:*+
+----
+python
+----
+
+
++*In[77]:*+
+[source, ipython3]
+----
+fav_programing_language1 = '   python'   # there is a gap on the left side
+print(fav_programing_language1)
+----
+
+
++*Out[77]:*+
+----
+   python
+----
+
+
++*In[49]:*+
+[source, ipython3]
+----
+fav_programing_language2 = 'python    '   # there is a gap on the right side
+print(fav_programing_language2)
+----
+
+
++*Out[49]:*+
+----
+python    
+----
+
+
++*In[84]:*+
+[source, ipython3]
+----
+fav_programing_language4 =  '   python    '   # there is a gap on both side
+print(fav_programing_language4)
+----
+
+
++*Out[84]:*+
+----
+   python    
+----
+
+
++*In[88]:*+
+[source, ipython3]
+----
+fav_programing_language1.lstrip() # lstrip is the method ------> leftside gap
+----
+
+
++*Out[88]:*+
+----'python'----
+
+
++*In[86]:*+
+[source, ipython3]
+----
+fav_programing_language2.rstrip()  # rstrip is the method -------> rightside gap
+----
+
+
++*Out[86]:*+
+----'python'----
+
+
++*In[87]:*+
+[source, ipython3]
+----
+fav_programing_language4.strip()   # strip -----> gap on both sides .....!
+----
+
+
++*Out[87]:*+
+----'python'----
+
+
++*In[ ]:*+
+[source, ipython3]
+----
+
+----
+
+
++*In[ ]:*+
+[source, ipython3]
+----
+
+----
+
+
++*In[ ]:*+
+[source, ipython3]
+----
+
+----
+
+
++*In[ ]:*+
+[source, ipython3]
+----
+
+----
+
+
++*In[ ]:*+
+[source, ipython3]
+----
+
+----
+
+
++*In[ ]:*+
+[source, ipython3]
+----
+
+----
+
+
++*In[ ]:*+
+[source, ipython3]
+----
+
+----
+
+
++*In[ ]:*+
+[source, ipython3]
+----
+
+----
+
+
++*In[ ]:*+
+[source, ipython3]
+----
+
+----
+
+
++*In[ ]:*+
+[source, ipython3]
+----
+
+----
+
+
++*In[ ]:*+
+[source, ipython3]
+----
+
+----
+
+
++*In[ ]:*+
+[source, ipython3]
+----
+
+----
+
+
++*In[ ]:*+
+[source, ipython3]
+----
+
+----
+
+
++*In[ ]:*+
+[source, ipython3]
+----
+
+----
+
+
++*In[ ]:*+
+[source, ipython3]
+----
+
+----
